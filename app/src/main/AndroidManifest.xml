@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_club"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClubApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".MyClubListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubManagerChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubManagerMemberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaitedMemberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActiveMemberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageInquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubManagerListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LikeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InactiveManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActiveManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovalManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakeClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

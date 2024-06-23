@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_green"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="110dp"
+        android:gravity="center"
+        android:text="리아동"
+        android:textColor="#005128"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp" />
+
+    <EditText
+        android:id="@+id/passwdEdit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp" />
+
+    <android.widget.Button
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/resetPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="비밀번호 재설정" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="회원가입" />
+    </LinearLayout>
+</LinearLayout>

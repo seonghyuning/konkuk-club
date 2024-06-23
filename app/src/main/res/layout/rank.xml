@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rankLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/numbertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        android:textColor="@color/green"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동아리 이름"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:text="동아리 소개"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/boundText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/boundlimit_background"
+                android:gravity="center"
+                android:paddingHorizontal="4dp"
+                android:text="범위"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boundlimit_background"
+                android:gravity="center"
+                android:paddingHorizontal="4dp"
+                android:text="종류"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/filledheart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/likeCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="1,234"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/memberCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:text="0명 활동중"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

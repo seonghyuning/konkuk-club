@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bound_prompt">범위</string>
+    <string-array name="bound_arrays">
+        <item>중앙 동아리</item>
+        <item>단과대 동아리</item>
+        <item>과 동아리</item>
+        <item>소모임</item>
+    </string-array>
+</resources>

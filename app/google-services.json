@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "488406470610",
+    "project_id": "clupproject-4fab6",
+    "storage_bucket": "clupproject-4fab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488406470610:android:2eef08da976d85cc1ec20b",
+        "android_client_info": {
+          "package_name": "com.example.clubapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM_smIWgwQLuK_sUcl7jKcu8M4XGgqSkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488406470610:android:1c92458e677fbc851ec20b",
+        "android_client_info": {
+          "package_name": "com.example.clupapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM_smIWgwQLuK_sUcl7jKcu8M4XGgqSkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

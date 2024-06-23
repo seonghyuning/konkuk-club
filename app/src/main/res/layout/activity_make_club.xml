@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_green"
+    android:orientation="vertical"
+    tools:context=".MakeClubActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="동아리개설"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/boundSpinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:entries="@array/bound_arrays" />
+
+    <Spinner
+        android:id="@+id/limitSpinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:entries="@array/type_arrays" />
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="10dp" />
+
+    <EditText
+        android:id="@+id/introEdit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:hint="짧은 소개"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/startYearSpinner"
+            android:layout_width="58dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/year_arrays" />
+
+        <Spinner
+            android:id="@+id/startMonthSpinner"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/month_arrays"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/startDaySpinner"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/day_arrays"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:text="~"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/endYearSpinner"
+            android:layout_width="58dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/year_arrays" />
+
+        <Spinner
+            android:id="@+id/endMonthSpinner"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/month_arrays"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/endDaySpinner"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_background"
+            android:entries="@array/day_arrays"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/contentTextMulti"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="설명"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <android.widget.Button
+        android:id="@+id/makeClubBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:text="동아리 개설 신청"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

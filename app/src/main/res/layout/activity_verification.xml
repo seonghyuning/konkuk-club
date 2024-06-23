@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_green"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".VerificationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-200dp"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:text="리아동"
+        android:textColor="#005128"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_background"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="jinwon0988@konkuk.ac.kr"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/sendEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:text="인증 완료"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

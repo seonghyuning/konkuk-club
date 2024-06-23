@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="리아동"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/managerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="관리자"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/myClubImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/myclub" />
+
+                <ImageView
+                    android:id="@+id/searchImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/search" />
+
+                <ImageView
+                    android:id="@+id/likeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/like" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/makingClubImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/makingclub" />
+
+                <ImageView
+                    android:id="@+id/clubManagerImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/managingclub" />
+
+                <ImageView
+                    android:id="@+id/myPageImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mypage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:padding="10dp"
+                android:text="동아리 순위"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rankRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:text="모집중인 동아리"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recruitRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

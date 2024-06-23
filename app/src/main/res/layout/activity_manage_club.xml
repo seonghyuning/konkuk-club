@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageClubActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="동아리관리"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="동아리 이름"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="동아리 소개"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:id="@+id/boundText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/boundlimit_background"
+                    android:gravity="center"
+                    android:paddingHorizontal="4dp"
+                    android:text="범위"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/typeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boundlimit_background"
+                    android:gravity="center"
+                    android:paddingHorizontal="4dp"
+                    android:text="종류"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/filledLikeImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/filledheart" />
+
+            <ImageView
+                android:id="@+id/likeImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/vacantheart" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/filledheart" />
+
+                <TextView
+                    android:id="@+id/likeCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="1,234"
+                    android:textColor="#FF0000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/memberCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0명 활동중"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="동아리 입장"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/clubManageChatText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="운영진 회의"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/manageInquiryText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="1:1 문의 관리"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/modifyClubText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="동아리 수정"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activeMemberText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="활동중인 회원"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/waitedMemberText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="대기중인 회원"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/manageClubManagerText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="운영진 관리"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/deleteClubText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/yellow_green_background"
+        android:gravity="center"
+        android:text="동아리 삭제"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/memberLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="이름"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/collegeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:text="단과대"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/majorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:text="학과"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:text="학번"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/gray" />
+
+</LinearLayout>

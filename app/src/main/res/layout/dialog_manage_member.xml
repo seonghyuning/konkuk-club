@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:id="@+id/manageMemberText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="승인을 선택하시면"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/manageMemberText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="해당 회원이 참여할 수 있습니다."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/memberBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_line_background"
+            android:gravity="center"
+            android:text="삭제"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.widget.Button
+            android:id="@+id/memberBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="승인"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
